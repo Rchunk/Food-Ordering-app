@@ -60,7 +60,7 @@ const RestaurantCard = (props) => {
 const Body = () => {
   return (
     <div className="body">
-      <div className="Search">Search</div>
+      <div className="Search">Search : <input type = "text"></input> </div>
       <div className="res-container">
         {reslist.map((restaurant) => (
           <RestaurantCard key={restaurant.info.id} resData={restaurant} />
@@ -213,34 +213,33 @@ const reslist = [
   },
   {
     info: {
-      id: "915804",
-      name: "THE WOK MASTER",
-      cloudinaryImageId:
-        "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/26/1a5012d4-0af4-4426-86ac-8cf1f0833fcb_915804.jpg",
-      locality: "arya samaj road",
-      areaName: "Rajpura",
-      costForTwo: "₹350 for two",
+      id: "466248",
+      name: "Chitta Dhaba",
+      cloudinaryImageId: "fuzsfxvjgmlzq09q6tlg",
+      locality: "Rajpura",
+      areaName: "Patiala",
+      costForTwo: "₹300 for two",
       cuisines: [
-        "Chinese",
-        "Italian",
-        "sandwich",
-        "Salads",
+        "North Indian",
+        "Snacks",
         "Beverages",
-        "Momos",
-        "Desserts",
+        "Indian",
+        "Street Food",
       ],
-      parentId: "287158",
-      avgRatingString: "NEW",
+      avgRating: 3.2,
+      parentId: "62249",
+      avgRatingString: "3.2",
+      totalRatingsString: "100+",
       sla: {
-        deliveryTime: 40,
-        lastMileTravel: 1.1,
+        deliveryTime: 43,
+        lastMileTravel: 1.2,
         serviceability: "SERVICEABLE",
-        slaString: "35-40 mins",
-        lastMileTravelString: "1.1 km",
+        slaString: "40-45 mins",
+        lastMileTravelString: "1.2 km",
         iconType: "ICON_TYPE_EMPTY",
       },
       availability: {
-        nextCloseTime: "2024-08-16 22:00:00",
+        nextCloseTime: "2024-08-16 23:59:00",
         opened: true,
       },
       badges: {},
@@ -270,7 +269,194 @@ const reslist = [
       },
       reviewsSummary: {},
       displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      isNewlyOnboarded: true,
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+    },
+  },
+  {
+    info: {
+      id: "803989",
+      name: "Veg Salad Bar",
+      cloudinaryImageId: "25462337920464c5eaafd4a7befd2c96",
+      locality: "Rajpura",
+      areaName: "Rajpura",
+      costForTwo: "₹200 for two",
+      cuisines: ["Salads", "Fast Food", "Snacks", "Beverages"],
+      avgRating: 4.8,
+      veg: true,
+      parentId: "479844",
+      avgRatingString: "4.8",
+      totalRatingsString: "5",
+      sla: {
+        deliveryTime: 48,
+        lastMileTravel: 3,
+        serviceability: "SERVICEABLE",
+        slaString: "45-50 mins",
+        lastMileTravelString: "3.0 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-08-16 21:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "10% OFF",
+        subHeader: "UPTO ₹40",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+    },
+  },
+  {
+    info: {
+      id: "682209",
+      name: "Bille Da Vaishno Dhaba",
+      cloudinaryImageId: "6dbf749b863c540b56738db880a6c733",
+      locality: "Sirhind Bye Pass",
+      areaName: "Rajpura",
+      costForTwo: "₹250 for two",
+      cuisines: ["Indian", "Fast Food"],
+      avgRating: 4.3,
+      veg: true,
+      parentId: "407196",
+      avgRatingString: "4.3",
+      totalRatingsString: "100+",
+      sla: {
+        deliveryTime: 59,
+        lastMileTravel: 2.6,
+        serviceability: "SERVICEABLE",
+        slaString: "55-60 mins",
+        lastMileTravelString: "2.6 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-08-16 23:59:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "30% OFF",
+        subHeader: "UPTO ₹70",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+    },
+  },
+  {
+    info: {
+      id: "209844",
+      name: "Rama Bakery & Snacks Bar",
+      cloudinaryImageId: "p4ksarmfsqkxncf4acfu",
+      locality: "Rajpura",
+      areaName: "Rajpura Locality",
+      costForTwo: "₹200 for two",
+      cuisines: ["North Indian"],
+      avgRating: 3.8,
+      parentId: "166369",
+      avgRatingString: "3.8",
+      totalRatingsString: "100+",
+      sla: {
+        deliveryTime: 50,
+        lastMileTravel: 1.5,
+        serviceability: "SERVICEABLE",
+        slaString: "45-50 mins",
+        lastMileTravelString: "1.5 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-08-16 23:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      aggregatedDiscountInfoV2: {},
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       restaurantOfferPresentationInfo: {},
       externalRatings: {
         aggregatedRating: {
